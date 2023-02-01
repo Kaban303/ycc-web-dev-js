@@ -12,7 +12,7 @@ function addItem(data) {
         let newItem = document.createElement('li')
         let newBlock =
             `<input onclick="finishTask(${countTask})" class="form-check-input me-1"  type="checkbox" value="" id="ch-${countTask}">
-             <label id="${countTask}" class="form-check-label" for="ch-${countTask}">${myInput.value}<button class="delete">Delete</button></label>`
+             <label id="${countTask}" class="form-check-label" for="ch-${countTask}">${myInput.value}</label><button class="delete">Delete</button>`
              
         newItem.innerHTML = newBlock
         newItem.classList.add('list-group-item')
